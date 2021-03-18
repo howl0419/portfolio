@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>works-section</title>
+    <link rel="stylesheet" href="skill.css">
+    <script src="https://kit.fontawesome.com/f8929fcfcd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      window.addEventListener("load", function () {
+        var nodelist = document.querySelectorAll("a[href^="#"]");
+        var node = Array.prototype.slice.call(nodelist, 0); 
+      
+        node.forEach(function (elem, index) {
+          elem.addEventListener("click", function (e) {
+            e.preventDefault();
+      
+            var href = elem.getAttribute("href");
+      
+            document.querySelector( href ).scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      });
+      </script>
+  </head>
+  <body background="images/po10.png">
+
+      <header>
+        <div class="header-logo">
+          <a href="index.html">
+            <img src="images/heart4.png">
+          </a>
+        </div>
+         <ul class="header-nav">
+          <li>
+            <a href="index.html">TOP</a>
+          </li>
+          <li>
+            <a href="index.html#works-section">WORKS</a> 
+          </li>
+          <li>
+            <a href="index.html#skills-section">SKILLS</a>
+          </li>
+          <li>
+            <a href="index.html#about-section">ABOUT</a>
+          </li>
+          <li>
+            <a href="index.html#contact-section">CONTACT</a>
+          </li>
+         </ul>
+      </header>
+
+    <main>
+      <ul class="side-nav">
+        <li>
+          <a href="#html-section">
+            <img src="images/skill1.png">
+          </a>
+        </li>
+        <li>
+          <a href="#css-section">
+            <img src="images/skill2.png">
+          </a>
+        </li>
+        <li>
+          <a href="#ps-section">
+            <img src="images/skill3.png">
+          </a>
+        </li>
+        <li>
+          <a href="#ai-section">
+            <img src="images/skill4.png">
+          </a>
+        </li>
+        <li>
+          <a href="#pp-section">
+            <img src="images/skill5.png">
+          </a>
+        </li>
+        <li>
+          <a href="#t-section">
+            <img src="images/skill7.png">
+          </a>
+        </li>
+      </ul>
+      
+        <div id="top">
+          <a href="#"><img src="images/arrow.png"></a>
+        </div> 
+
+      
+
+      <div class="contents">
+        <h1>SKILLS</h1>
+        <div class="html" id="html-section">
+          <img src="images/flower2.png">
+          <h1>HTML</h1>
+           <table>
+            <tr>
+              <th>技能レベル</th><td>初級（独学）</td>
+            </tr>
+             <tr>
+               <th>使用期間</th><td>約5ヶ月　2020年　10月~</td>
+             </tr>
+             <tr>
+              <th>できること</th><td class="p">
+                ・静的なコーディング
+              <br>・head、body、header、main、footerなどの中に書くべき事柄の理解
+              <br>・文字、画像、リンク、font awesomeの挿入
+              <br>・div、h、pなど基本的な要素の使い分け
+              <br>・class、id、formの使用
+              <br>・1サイトにおける複数ページの作成
+              </td>
+            </tr>
+           </table>
+        </div>
+        <div class="css" id="css-section">
+          <img src="images/flower2.png">
+          <h1>CSS</h1>
+          <table>
+            <tr>
+              <th>技能レベル</th><td>初級（独学）</td>
+            </tr>
+            <tr>
+              <th>使用期間</th><td>約5ヶ月　2020年　10月~</td>
+            </tr>
+            <tr>
+              <th>できること</th><td class="p">
+                ・調べればアニメーションをカスタマイズできる
+                <br>・シンプルなレイアウトの作成
+                <br>・marginとpaddingの使い分け
+                <br>・block、inline、inline-blockの違いの理解
+                <br>・基本的なセレクタに書くべきプロパティの理解
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="ps" id="ps-section">
+          <img src="images/flower1.png">
+          <h1>Photoshop</h1>
+          <table>
+            <tr>
+              <th>技能レベル</th><td>初級（独学）</td>
+            </tr>
+            <tr>
+              <th>使用期間</th><td>約6ヶ月　2020年　9月~</td>
+            </tr>
+            <tr>
+              <th>できること</th><td class="p1">
+                ・基本的な操作全般
+                <br>・ページデザインの作成
+                <br>・写真の加工・合成
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="ai" id="ai-section">
+          <img src="images/flower1.png">
+          <h1>Illustrator</h1>
+          <table>
+            <tr>
+              <th>技能レベル</th><td>初級（独学）</td>
+            </tr>
+            <tr>
+              <th>使用期間</th><td>約6ヶ月　2020年　9月~</td>
+            </tr>
+            <tr>
+              <th>できること</th><td class="p2">
+                ・基本的な操作全般
+                <br>・ロゴ、ポスターの作成
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="pp" id="pp-section">
+          <img src="images/flower4.png">
+          <h1>PowerPoint</h1>
+          <table>
+            <tr>
+              <th>技能レベル</th><td>上級（独学）</td>
+            </tr>
+            <tr>
+              <th>使用期間</th><td>約3年　2018年　5月~</td>
+            </tr>
+            <tr>
+              <th>できること</th><td class="p1">
+                ・プレゼン資料作成
+                <br>・ワイヤーフレーム作成
+                <br>・図やスライドの挿入
+                <br>・機能を調べずに使える
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="t" id="t-section">
+          <img src="images/flower5.png">
+          <h1>TOEIC　リスニング＆リーディング
+          </h1>
+          <table>
+            <tr>
+              <th>技能レベル</th><td>中級（775点）</td>
+            </tr>
+            <tr>
+              <th>取得時期</th><td>2019年　6月23日</td>
+            </tr>
+            <tr>
+              <th>勉強期間</th><td>約6ヶ月　その内）留学：約1ヶ月</td>
+            </tr>
+            <tr>
+              <th>できること</th><td class="p1">
+                短い会話において、否定構文や
+                <br>複雑な構文、難しいワードが
+                <br>使われている場合でも理解できる
+                
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h1>(C) Yuma Hoshino</h1>
+    </footer>
+  </body>
+</html>

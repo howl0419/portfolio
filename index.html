@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="https://kit.fontawesome.com/f8929fcfcd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <script>
+      window.addEventListener("load", function () {
+        var nodelist = document.querySelectorAll("a[href^="#"]");
+        var node = Array.prototype.slice.call(nodelist, 0); 
+        
+        node.forEach(function (elem, index) {
+          elem.addEventListener("click", function (e) {
+            e.preventDefault();
+            
+            var href = elem.getAttribute("href");
+            
+            document.querySelector( href ).scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      });
+      </script>
+  </head>
+  <body background="images/po11.png">
+    <header>
+      <div class="header-logo">
+        <a href="#">
+          <img src="images/heart4.png">
+        </a>
+      </div>
+       <ul class="header-nav">
+        <li>
+          <a href="#">TOP</a>
+        </li>
+        <li>
+          <a href="#works-section">WORKS</a> 
+        </li>
+        <li>
+          <a href="#skills-section">SKILLS</a>
+        </li>
+        <li>
+          <a href="#about-section">ABOUT</a>
+        </li>
+        <li>
+          <a href="#contact-section">CONTACT</a>
+        </li>
+       </ul>
+    </header>
+
+    <main>
+      <div class="pagetop">
+        <p class="vertical">「人」を基点にした課題解決を
+          <br><span class="mgr">心がけたWEBデザイン</span> 
+        </p>
+        <img class="img1" src="images/heart52.png">      
+      </div>
+
+      <div class="contents">
+       <img class="img2" src="images/nameplate4.png">
+      </div>   
+       
+
+      <div id="page_top">
+        <a href="#"><img src="images/arrow.png"></a>
+      </div> 
+
+
+     <div  class="works" id="works-section">
+      <h1>WORKS</h1>
+      <p>Click the work and nameplate 🧩</p>
+
+         <div class="work1">
+          <a href="images/liberar4.png" data-lightbox="group"><img src="images/liberar4.png" width="300" height="240"></a>
+            
+            <a href="works.html">
+              <img class="plate1" src="images/plate2.png">
+            </a>                        
+              <p><span class="mgr20">Fashion Site</span>Top page</p>
+         </div>
+
+         <div class="work1">
+
+          <a href="images/dot.y3.png" data-lightbox="group"><img src="images/dot.y3.png" width="300" height="240"></a>
+            
+             <a href="works.html#dot.y-section">
+               <img class="plate1" src="images/plate3.png">
+              </a> 
+              <p>
+              <span class="mgr20">Fashion Site</span>
+              First view 
+              </p>
+           
+         </div>
+         <div class="work1">
+
+          <a href="images/music2.png" data-lightbox="group"><img src="images/music2.png" width="300" height="240"></a>
+              
+           <a href="works.html#rui-section">
+             <img class="plate1" src="images/plate4.png">
+            </a>
+            <p>
+            <span class="mgr20">Music Site</span>
+            First view 
+          </p>
+        
+         </div>
+         <div class="work2">
+
+          <a href="images/poster2.png" data-lightbox="group"><img src="images/poster2.png" width="300" height="240"></a>
+            
+             <a href="works.html#depp-section">   
+               <img class="plate1" src="images/plate5.png">          
+              </a>
+              <p>
+                <span class="mgr20">Event Poster</span>
+              </p>
+        
+          </div>         
+         <div class="work2">
+
+          <a href="images/tea2.png" data-lightbox="group"><img src="images/tea2.png" width="300" height="240"></a>
+          
+             <a href="works.html#tea-section">
+               <img class="plate1" src="images/plate6.png">
+              </a> 
+              <p>
+              <span class="mgr20">Teashop Site</span>
+              First view
+              </p>
+          </div>
+          <div class="work2">
+
+            <a href="images/hairsalon2.png" data-lightbox="group"><img src="images/hairsalon2.png" width="300" height="240"></a>
+             
+              <a href="works.html#hair-section">    
+                <img class="plate1" src="images/plate7.png">       
+              </a>
+              <p>
+                <span class="mgr20">Hairsalon Site</span>
+                First view
+                </p>
+           </div>
+      </div>
+      <div class="skills" id="skills-section">
+        <h1>SKILLS</h1>
+        <p>Click the tool name🖍</p>
+        <div class="skills-contents">         
+            <img src="images/flower2.png">           
+            <p>
+              <a href="skill.html#html-section">
+              HTML
+            </a>
+            </p>
+        </div>
+        <div class="skills-contents">          
+            <img src="images/flower2.png">          
+            <p>
+              <a href="skill.html#css-section">
+              CSS
+            </a>
+            </p>
+        </div>
+        <div class="skills-contents">          
+            <img src="images/flower1.png">          
+            <p>
+              <a href="skill.html#ps-section">
+              Photoshop
+            </a>
+            </p>
+        </div>
+        <div class="skills-contents">          
+            <img src="images/flower1.png">
+            <p>
+              <a href="skill.html#ai-section">
+              Illustrator
+            </a>
+            </p>
+        </div>
+        <div class="skills-contents">         
+            <img src="images/flower4.png">
+            <p>
+              <a href="skill.html#pp-section">
+              PowerPoint
+            </a>
+            </p>
+        </div>
+        <div class="skills-contents">         
+            <img src="images/flower5.png">
+            <p>
+              <a href="skill.html#t-section">
+                TOEIC<br>
+                リスニング<br>
+                &<br>
+                リーディング
+            </a>
+            </p>
+        </div>
+      </div>
+
+
+      <div class="about" id="about-section">
+        <h1>ABOUT</h1>
+        
+        <div  class="about-images">        
+          <div class="icons">
+            <img class="icon1" src="images/me.png">
+            <img class="icon2" src="images/heart5.png">
+          </div>
+          <img class="nameplate" src="images/nameplate2.png">
+        </div>
+        
+        <div class="about-txt">
+          <p>UIデザイナー志望の星野由真と申します。</p>
+          <p>UIデザイナーとしての将来像は、<span class="red">「人を基点にした課題解決ができ、国際感覚</span></p>
+          <p><span class="red">の優れたUIデザイナー」</span>です。そのために、<span class="red">「UIデザイン・英語・フロントエンド・</span></p>
+          <p ><span class="red">バックエンド」</span> という4つのスキルに強みのある人材を目指します。WEB周り全般で
+          </p>
+          <p>アクセシビリティを確保したWEBサイトや、英語力を活かしたグローバルサイトの制作等に</p>
+          <p>携わることで、幅広い業務が可能な人材になりたいと考えております。</p>
+          <p class="about-txt2"><a href="about.html">view more</a></p>
+        </div>     
+      </div>
+      
+      <div class="contact" id="contact-section">
+        <h1>CONTACT</h1>
+        <p>ポートフォリオサイト、楽しんでいただけましたでしょうか？
+         <br>私について、ポートフォリオについて、些細なフィードバックでもいただけましたら幸いです🌼
+        </p>
+        <form method="POST"
+        action="mailto:hsnym0419@icloud.com">
+        <p>お名前</p>
+        <input type="text" name="NAME">
+        <p>メールアドレス</p>
+        <input type="text" name="MAIL">
+        <p>メッセージ</p>
+        <textarea type="text" name="MESSAGE"></textarea>
+        <input class="submit" type="submit">
+      </form>
+    </div>
+    </main>
+    <footer>
+      <h1>(C) Yuma Hoshino</h1>
+    </footer>
+  </body>
+  </html>

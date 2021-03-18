@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <title>works-section</title>
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/f8929fcfcd.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+      window.addEventListener("load", function () {
+        var nodelist = document.querySelectorAll("a[href^="#"]");
+        var node = Array.prototype.slice.call(nodelist, 0); 
+      
+        node.forEach(function (elem, index) {
+          elem.addEventListener("click", function (e) {
+            e.preventDefault();
+      
+            var href = elem.getAttribute("href");
+      
+            document.querySelector( href ).scrollIntoView({ behavior: "smooth" });
+          });
+        });
+      });
+      </script>
+  </head>
+
+  <body background="images/po10.png">
+    <header>
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="images/heart4.png">
+        </a>
+      </div>
+       <ul class="header-nav">
+        <li>
+          <a href="index.html">TOP</a>
+        </li>
+        <li>
+          <a href="index.html#works-section">WORKS</a> 
+        </li>
+        <li>
+          <a href="index.html#skills-section">SKILLS</a>
+        </li>
+        <li>
+          <a href="index.html#about-section">ABOUT</a>
+        </li>
+        <li>
+          <a href="index.html#contact-section">CONTACT</a>
+        </li>
+       </ul>
+    </header>
+
+    <main>
+     
+      <div id="top">
+        <a href="#"><img src="images/arrow.png"></a>
+      </div> 
+
+      <div class="contents">
+        <h1>ABOUT</h1>
+        <div class="about-img">
+          <img src="images/me.png">
+          <img src="images/heart5.png">
+        </div>
+        <div class="about-txt">
+          <h1>Who is me ?</h1>
+          <table>
+            <tr><th>名前</th><td>星野由真</td></tr>
+            <tr><th>生年月日</th><td>1999年　4月　19日</td></tr>
+            <tr><th>居住地</th><td>東京都　八王子市</td></tr>
+            <tr><th>大学</th><td>東海大学　文化社会学部
+              <br>ヨーロッパ・アメリカ学科</td></tr>
+          </table>
+        </div>
+          <div class="my-style">
+            <h1>得意なデザイン</h1>
+            <img src="images/style.png">
+          </div>
+          
+      </div>
+    </main>
+
+    <footer>
+      <h1>(C) Yuma Hoshino</h1>
+    </footer>
+  </body>
+</html>

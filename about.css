@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: "殴り書きクレヨン" , sans-serif;  
+}
+
+header{
+  background-color: white;
+  height: 80px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.header-logo  img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin:15px 30px;
+  padding: 0;
+}
+.header-logo :hover{
+  opacity: 0.7;
+}
+.header-nav{
+  list-style:none ;
+  width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  
+}
+.header-nav li{
+  float: left;
+  padding: 7px 40px;
+  font-size: 35px;
+  font-weight: bold;
+  transition: all .5s;
+}
+
+.header-nav li a {
+  color: black;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  
+}
+.header-nav li a::after {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background:black;
+  transform: scale(0, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+.header-nav li a:hover::after {
+	transform: scale(1, 1);
+}
+
+.header-nav li :hover {
+  color: rgb(190, 190, 190);
+}
+
+main{
+  margin-top: 80px;
+  background-color:rgba(250, 250, 250, 0.5);
+}
+
+
+#top {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+	border-radius: 50%;
+  z-index: 10;
+}
+#top a{
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+#top img {
+  width: 75px;
+  height: 75px;
+}
+#top a :hover{
+  opacity: 0.5;
+}
+
+
+.contents {
+  text-align: center;
+  padding-bottom: 80px;
+}
+.contents h1 {
+  padding:50px 0 ;
+  margin: 0 auto;
+  font-size: 45px;
+}
+.about-img img {
+  width: 450px;
+  height: 350px;
+  padding: 0 45px;
+}
+
+.about-txt {
+  width: 700px;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 40px;
+}
+
+ th {
+  width: 30%;
+  background-color: rgba(160, 0, 0, 0.5);
+  letter-spacing: 4px;
+}
+ td {
+  background-color:rgba(255, 0, 0, 0.322);
+  width: 70%;
+  padding: 20px 38px;
+  letter-spacing: 4px;
+  line-height: 40px;
+}
+
+
+.my-style img {
+  width: 825px;
+  height: 600px;
+}
+
+
+footer {
+  height: 80px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+footer h1 {
+  font-weight: normal;
+  font-size: 15px;
+  padding: 28px 0;
+  margin: 0;
+}
